@@ -11,7 +11,7 @@
     {
       "id": 2,
       "category": "silver",
-      "price": "$30.00",
+      "price": "$40.00",
       "item1": true,
       "item2": true,
       "item3": false
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "category": "bronze",
-      "price": "$30.00",
+      "price": "$50.00",
       "item1": true,
       "item2": true,
       "item3": true

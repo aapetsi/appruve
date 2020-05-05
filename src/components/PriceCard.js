@@ -7,12 +7,23 @@ const Card = styled.div`
   height: 300px;
   border: 1px solid grey;
   border-radius: 10px;
+  background: #6677e1;
 `
 
 const Button = styled.button`
   width: 150px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
+`
+
+const Details = styled.div`
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
 `
 
 const PriceCard = ({ details }) => {
@@ -34,10 +45,10 @@ const PriceCard = ({ details }) => {
   }
   return (
     <Card>
-      <h1>{details.category}</h1>
+      <h1>{details.category.toUpperCase()}</h1>
       <h2>{details.price}</h2>
-      <div>
-        <span>lorem ipsum sit dolor amet</span>
+      <Details>
+        <span>lorem ipsum</span>
         <span>
           {details.item1 === true ? (
             <span>&#10004;</span>
@@ -45,10 +56,10 @@ const PriceCard = ({ details }) => {
             <span>&#10007;</span>
           )}
         </span>
-      </div>
+      </Details>
 
-      <div>
-        <span>lorem ipsum sit dolor amet</span>
+      <Details>
+        <span>lorem ipsum</span>
         <span>
           {details.item2 === true ? (
             <span>&#10004;</span>
@@ -56,10 +67,10 @@ const PriceCard = ({ details }) => {
             <span>&#10007;</span>
           )}
         </span>
-      </div>
+      </Details>
 
-      <div>
-        <span>lorem ipsum sit dolor amet</span>
+      <Details>
+        <span>lorem ipsum</span>
         <span>
           {details.item3 === true ? (
             <span>&#10004;</span>
@@ -67,7 +78,7 @@ const PriceCard = ({ details }) => {
             <span>&#10007;</span>
           )}
         </span>
-      </div>
+      </Details>
 
       <Button onClick={handleSubscription}>Subscribe</Button>
     </Card>
