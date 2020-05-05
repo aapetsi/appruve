@@ -4,7 +4,7 @@ import axios from 'axios'
 
 const Card = styled.div`
   width: 250px;
-  height: 300px;
+  height: 350px;
   border: 1px solid grey;
   border-radius: 10px;
   background: #6677e1;
@@ -14,7 +14,9 @@ const Button = styled.button`
   width: 150px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 18px;
+  border-radius: 5px;
+  height: 32px;
 `
 
 const Details = styled.div`
@@ -37,10 +39,13 @@ const PriceCard = ({ details }) => {
         console.log(res.data)
         if (res.status === 200 || res.status === 201) {
           alert('Your subscription has been submitted successfully')
+        } else {
+          alert('Oops something went wrong with your order.')
         }
       })
       .catch((err) => {
         console.log(err)
+        alert('Oops something went wrong with your order.')
       })
   }
   return (

@@ -53,6 +53,10 @@
     {
       "category": "silver",
       "id": 7
+    },
+    {
+      "category": "gold",
+      "id": 8
     }
   ]
 }
