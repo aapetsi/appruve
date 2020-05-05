@@ -9,6 +9,8 @@ const Container = styled.div`
   justify-content: space-between;
   margin-left: 30px;
   margin-right: 30px;
+  margin: 0 auto;
+  width: 70%;
 `
 
 const PricingPage = () => {
