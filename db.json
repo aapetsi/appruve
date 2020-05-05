@@ -1,0 +1,28 @@
+{
+    "plans" : [
+        {   
+            "id": 1,
+            "category": "gold",
+            "price": "$30.00", 
+            "item1": true, 
+            "item2": false, 
+            "item3": false
+        },
+        {
+            "id": 2,
+            "category": "silver",
+            "price": "$30.00", 
+            "item1": true, 
+            "item2": true, 
+            "item3": false
+        },
+        {
+            "id": 3,
+            "category": "bronze",
+            "price": "$30.00", 
+            "item1": true, 
+            "item2": true, 
+            "item3": true
+        }
+    ]
+}
