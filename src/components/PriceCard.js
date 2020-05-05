@@ -58,7 +58,7 @@ const PriceCard = ({ details }) => {
       <h1>{details.category.toUpperCase()}</h1>
       <h2>{details.price}</h2>
       <Details>
-        <span>lorem ipsum</span>
+        <span>Feature 1</span>
         <span>
           {details.item1 === true ? (
             <span>&#10004;</span>
@@ -69,7 +69,7 @@ const PriceCard = ({ details }) => {
       </Details>
 
       <Details>
-        <span>lorem ipsum</span>
+        <span>Feature 2</span>
         <span>
           {details.item2 === true ? (
             <span>&#10004;</span>
@@ -80,7 +80,7 @@ const PriceCard = ({ details }) => {
       </Details>
 
       <Details>
-        <span>lorem ipsum</span>
+        <span>Feature 3</span>
         <span>
           {details.item3 === true ? (
             <span>&#10004;</span>
