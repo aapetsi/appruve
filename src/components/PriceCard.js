@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const Card = styled.div`
   width: 250px;
@@ -15,7 +16,22 @@ const Button = styled.button`
 `
 
 const PriceCard = ({ details }) => {
-  console.log(details)
+  const handleSubscription = (e) => {
+    axios
+      .post('http://localhost:3001/subscriptions', {
+        category: details.category,
+      })
+      .then((res) => {
+        console.log(res)
+        console.log(res.data)
+        if (res.status === 200 || res.status === 201) {
+          alert('Your subscription has been submitted successfully')
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
   return (
     <Card>
       <h1>{details.category}</h1>
@@ -53,7 +69,7 @@ const PriceCard = ({ details }) => {
         </span>
       </div>
 
-      <Button>Subscribe</Button>
+      <Button onClick={handleSubscription}>Subscribe</Button>
     </Card>
   )
 }
