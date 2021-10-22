@@ -8,7 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git checkout staging && git rebase master
+
+      - name: Merge master -> staging
+        uses: devmasx/mege-branch@master
+        with:
+          type: now
+          from_branch: master
+          target_branch: staging
+          github_token: ${{ github.token }}
 
   Explore-Github-Actions:
     runs-on: ubuntu-latest
