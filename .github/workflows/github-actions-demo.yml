@@ -4,6 +4,9 @@ on:
     branches:
       - master
 jobs:
+  sync-branch:
+    runs-on: ubuntu-latest
+
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
